@@ -1,0 +1,53 @@
+//DEBAIAN Is Much Lighter Than Kali If Your Are A Professional and Smooth look Fan Like Me  We Use Debain With Kali Tools And Repo.
+// Note :- ()Parenthersis Used In The Note Is To Diffrenciate Between Normal Words And Commands Please While Using Commands Do Not Use The ()Parenthesis.
+// First Download The Debian with this link ( https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.2.0-amd64-netinst.iso ) use curl or Directly go to the link the dowload will start,
+After Installation Follow The Below Process
+
+1.First to add a sudo user :- 
+type this command ( su - root ) then
+enter the password and you will be in root mode,
+then nano the etc/sudoers file then add your user to it below the root.
+
+2.then we have to add kali repo :-
+First open the ( sudo nano -w /etc/apt/sources.list ) then add this in
+the end of the page ( ## Kali Linux Rolling Repo ## ) &&
+( deb http://http.kali.org/kali kali-rolling main contrib non-free )
+After Adding save it And Then Add and import the Kali Linux GPG key
+from terminal to add type 
+( sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ED444FF07D8D0BF6 )
+Then update the system by ( sudo apt update && sudo apt upgrade -y)
+
+3. Then We Have To Install Kali tools and repo:-
+ Before That Install Python3 and pip and php By ( sudo apt install pip) &&
+( sudo apt install python3 ) && ( sudo apt install php)
+Then To download tweaks just give download command ( sudo apt install kali-tweaks )
+And Then Just Give the Command ( kali-tweaks -h ) to download all tools from repo.
+
+4. Adding Go To system :-
+Just download The Tar File From The Go Website And Then Unzip The Tar
+file By  command ( tar -xvf (go1.whaterever the version) ) after
+extracting just delete the tar file and move the go to usr/local to 
+move type the command ( sudo mv go /usr/local/ ). And Then Back To Your Home Path Where Your Home Folders Are
+After Moving Add This To Your system termiinal file aka which shell you
+are using if using bash just add it to ( ~/.bashrc ) If you are using
+ZSH then add it to your ( ~/.zshrc ) file, To Know Your Shell Just Type This Command ( echo $SHELL ) Then Add 
+According to it.
+What To Add , Add This Path In The End  
+(
+export GOPATH=/root/go-workspace
+
+export GOROOT=/usr/local/go
+
+PATH=$PATH:$GOROOT/bin/:$GOPATH/bin
+
+) 
+
+Then save It by ctrl+x And Then Press y And enter
+
+Then After just type ( source ~/.bashrc)-if you use bash And ( source ~/.zshrc )- if you use ZSH
+
+
+5. then just reboot you system by ( systemctl reboot ) or poweroff by ( systemctl poweroff )
+And Enjoy!!
+
+//HAPPY HACKING.
