@@ -35,9 +35,7 @@ According to it.
 What To Add , Add This Path In The End  
 (
 export GOPATH=/root/go-workspace
-
-export GOROOT=/usr/local/go
-
+export GOROOT=/root/go
 PATH=$PATH:$GOROOT/bin/:$GOPATH/bin
 
 ) 
