@@ -34,8 +34,8 @@ ZSH then add it to your ( ~/.zshrc ) file, To Know Your Shell Just Type This Com
 According to it.
 What To Add , Add This Path In The End  
 (
-export GOPATH=/root/go-workspace
-export GOROOT=/root/go
+export GOPATH=/home/zeny/go
+export GOROOT=/usr/local/go
 PATH=$PATH:$GOROOT/bin/:$GOPATH/bin
 
 ) 
